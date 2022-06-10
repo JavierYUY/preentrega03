@@ -1,0 +1,183 @@
+/***********************Estilos de Cursos**********************/
+/*main de curso*/
+.estilo-titulo{
+    text-align: map-get($map: $estilo-h1, $key: align);
+    color: map-get($map: $estilo-h1, $key: color);
+    font-size: map-get($map: $estilo-h1, $key: size);
+}
+
+.curso{
+    text-align: center;
+    margin: 10px;
+    height: 400px;
+    p{
+        color: $color-letra;
+    }
+}
+
+main{
+    p{
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/*CURSOS PRESENCIALES*/
+.divCursosPresenciales{
+    display: grid;
+    grid-template-areas:    "tituloH2"
+                            "curso1"
+                            "curso2"
+                            "curso3";
+    justify-content: center;
+    justify-items: center;
+    h2{
+        grid-area: tituloH2;
+    }
+}
+
+.curso1{
+    grid-area: curso1;
+    display: grid;
+    grid-template-areas:    "nombreCurso1"
+                            "imagenCurso1"
+                            "parrafoCurso1";
+    justify-content: center;
+    justify-items: center;
+    h3{
+        grid-area: nombreCurso1;
+        color: $color-principal;
+    }
+    img{
+        grid-area: imagenCurso1;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+    p{
+        grid-area: parrafoCurso1;
+    }
+}
+
+.curso2{
+    grid-area: curso2;
+    display: grid;
+    grid-template-areas:    "nombreCurso2"
+                            "imagenCurso2"
+                            "parrafoCurso2";
+    justify-content: center;
+    justify-items: center;
+    h3{
+        grid-area: nombreCurso2;
+        color: $color-principal;
+    }
+    img{
+        grid-area: imagenCurso2;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+    p{
+        grid-area: parrafoCurso2;
+    }
+}
+
+.curso3{
+    grid-area: curso3;
+    display: grid;
+    grid-template-areas:    "nombreCurso3"
+                            "imagenCurso3"
+                            "parrafoCurso3";
+    justify-content: center;
+    justify-items: center;
+    h3{
+        grid-area: nombreCurso3;
+        color: $color-principal;
+    }
+    img{
+        grid-area: imagenCurso3;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+    p{
+        grid-area: parrafoCurso3;
+    }
+}
+
+/*CURSOS ONLINE*/
+.divCursosOnline{
+    background-color: $color-principal;
+    display: grid;
+    grid-template-areas:    "tituloOnlineH2"
+                            "online1"
+                            "online2"
+                            "online3";
+    justify-content: center;
+    justify-items: center;
+    h2{
+        grid-area: tituloOnlineH2;
+        color: $color-letra;
+    }
+}
+
+.online1{
+    grid-area: online1;
+    display: grid;
+    grid-template-areas:    "nombreOnline1"
+                            "imagenOnline1"
+                            "parrafoOnline1";
+    justify-content: center;
+    justify-items: center;
+    h3{
+        grid-area: nombreOnline1;
+    }
+    img{
+        grid-area: imagenOnline1;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+    p{
+        grid-area: parrafoOnline1;
+    }
+}
+
+.online2{
+    grid-area: online2;
+    display: grid;
+    grid-template-areas:    "nombreOnline2"
+                            "imagenOnline2"
+                            "parrafoOnline2";
+    justify-content: center;
+    justify-items: center;
+    h3{
+        grid-area: nombreOnline2;
+    }
+    img{
+        grid-area: imagenOnline2;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+    p{
+        grid-area: parrafoOnline2;
+    }
+}
+
+.online3{
+    grid-area: online3;
+    display: grid;
+    grid-template-areas:    "nombreOnline3"
+                            "imagenOnline3"
+                            "parrafoOnline3";
+    justify-content: center;
+    justify-items: center;
+    h3{
+        grid-area: nombreOnline3;
+    }
+    img{
+        grid-area: imagenOnline3;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+    p{
+        grid-area: parrafoOnline3;
+    }
+}

@@ -1,0 +1,8 @@
+/*EXTEND*/
+.tienda{
+    img{
+        width: $medidaRem * 15;
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+}

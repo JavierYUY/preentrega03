@@ -1,0 +1,82 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logoGrande{
+    display: none;
+    width: 500px;
+}
+
+.logoChico{
+    display: block;
+    width: 80px;
+}
+
+/********************Estilos del menu********************/
+.menuTelefonos{
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    background-color: $color-principal;
+    ul{
+        li{ 
+            list-style-type: none;/*saca los puntos del menu*/
+            display: inline-block;/*pone el menu en horizontal*/
+            color: $color-letra;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0.5rem;
+            position: relative;
+        }
+
+        ul{
+            display: none;
+            position: absolute;
+        }
+    }
+}
+
+.subMenuTelefonos{
+    background-color: $color-principal;
+    color: $color-letra;
+    font-weight: bold;
+    font-size: 35px;
+    li{
+        a{
+            text-decoration: none;/*saca el subrayado azul del link*/
+            color: $color-letra;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.menuTelefonos ul li:hover > ul{
+    display: block;
+}
+
+
+.menu{
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+    background-color: $color-principal;
+    ul{
+        li{
+            list-style-type: none;/*saca los puntos del menu*/
+            display: inline-block;/*pone el menu en horizontal*/
+            font-size: 1rem;
+            margin: 0.5rem;
+            position: relative;
+            a{
+                text-decoration: none;/*saca el subrayado azul del link*/
+                color: $color-letra;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

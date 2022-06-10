@@ -1,0 +1,108 @@
+/***********************Estilos de Contacto***********************/
+.estilo-titulo{
+    text-align: map-get($map: $estilo-h1, $key: align);
+    color: map-get($map: $estilo-h1, $key: color);
+    font-size: map-get($map: $estilo-h1, $key: size);
+}
+
+form{
+    background-color: $color-principal;
+    color: $color-letra;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: $color-letra;
+}
+
+form{ 
+    legend{
+        font-size: 25px;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+.label{
+    text-align: right;
+}
+
+.respuesta{
+    text-align: left;
+}
+
+.formulario{
+    display: grid;
+    grid-template-areas:    "formNombre"
+                            "formEmail"
+                            "formPais"
+                            "formComentarios"
+                            "formBotones";
+    justify-content: center;
+    justify-items: center;
+}
+
+.formNombre{
+    grid-area: formNombre;
+}
+
+.formEmail{
+    grid-area: formEmail;
+}
+
+.formPais{
+    grid-area: formPais;
+}
+
+.formComentarios{
+    grid-area: formComentarios;
+}
+
+.formBotones{
+    grid-area: formBotones;
+}
+
+/***********************BOOTSTRAP***********************/
+/*Menu*/
+.menu-Contacto{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: $color-principal;
+    ul{
+        height: auto;
+        li{
+            list-style-type: none;/*saca los puntos del menu*/
+            display: inline-block;/*pone el menu en horizontal*/
+            font-size: 1rem;
+            margin: 0.5rem;
+            position: relative;
+            a{
+                text-decoration: none;/*saca el subrayado azul del link*/
+                color: $color-letra;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.menu-brand{
+    color: $color-letra;
+    font-weight: bold;
+}
+
+/*DIV EMAIL Y PAIS EN CONTACTO*/
+.select-pais-email{
+    width: 100%;
+}
+
+.form-class-contacto{
+    background-color: $color-principal;
+    margin: $medidaRem ($medidaRem * 2) $medidaRem ($medidaRem * 2);
+}
+
+.boton-enviar{
+    background-color: $color-letra;
+    color: $color-principal;
+}

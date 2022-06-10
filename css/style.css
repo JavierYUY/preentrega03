@@ -1,0 +1,634 @@
+/*EXTEND*/
+.tienda img, .tienda1 img img, .tienda2 img img, .tienda3 img img, .tienda4 img img {
+  width: 15rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+/*MIXIN*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.logoGrande {
+  display: none;
+  width: 500px; }
+
+.logoChico {
+  display: block;
+  width: 80px; }
+
+/********************Estilos del menu********************/
+.menuTelefonos {
+  width: 100%;
+  text-align: center;
+  height: 5rem;
+  background-color: #669966; }
+  .menuTelefonos ul li {
+    list-style-type: none;
+    /*saca los puntos del menu*/
+    display: inline-block;
+    /*pone el menu en horizontal*/
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    position: relative; }
+  .menuTelefonos ul ul {
+    display: none;
+    position: absolute; }
+
+.subMenuTelefonos {
+  background-color: #669966;
+  color: white;
+  font-weight: bold;
+  font-size: 35px; }
+  .subMenuTelefonos li a {
+    text-decoration: none;
+    /*saca el subrayado azul del link*/
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold; }
+
+.menuTelefonos ul li:hover > ul {
+  display: block; }
+
+.menu {
+  display: none;
+  width: 100%;
+  text-align: center;
+  height: 5rem;
+  background-color: #669966; }
+  .menu ul li {
+    list-style-type: none;
+    /*saca los puntos del menu*/
+    display: inline-block;
+    /*pone el menu en horizontal*/
+    font-size: 1rem;
+    margin: 0.5rem;
+    position: relative; }
+    .menu ul li a {
+      text-decoration: none;
+      /*saca el subrayado azul del link*/
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold; }
+
+/***********************Estilos del main***********************/
+main h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #669966;
+  margin: 10px; }
+
+main h2 {
+  text-align: center;
+  color: #669966;
+  font-size: 40px; }
+
+main h3 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  color: white; }
+
+.mainIndex {
+  display: grid;
+  grid-template-areas: "area1" "area2";
+  justify-content: center;
+  justify-items: center; }
+
+/***********************Presentacion Instituto******************************/
+.divPresentacionInstituto {
+  grid-area: area1;
+  /*Grid del Main*/
+  width: 100%;
+  height: 60vh;
+  background-color: #f3f8fc;
+  display: grid;
+  grid-template-areas: "tituloH2" "imgLogo" "descripcionP";
+  justify-content: center;
+  justify-items: center; }
+  .divPresentacionInstituto img {
+    grid-area: imgLogo;
+    display: none;
+    width: 25rem;
+    height: 25rem; }
+  .divPresentacionInstituto h2 {
+    grid-area: tituloH2;
+    padding: 2rem;
+    font-size: 2rem; }
+  .divPresentacionInstituto p {
+    grid-area: descripcionP;
+    padding: 1rem;
+    font-size: 1.5rem; }
+
+.pAlternativo {
+  display: none; }
+
+/***********************Estilos del divActividadesDestacadas***********************/
+.divActividadesDestacadas {
+  grid-area: area2;
+  /*Grid del Main*/
+  width: 100%;
+  display: grid;
+  grid-template-areas: "tituloH2" "actividad1" "actividad2" "actividad3" "actividad4";
+  justify-content: center;
+  justify-items: center;
+  background-color: #b2eb9c; }
+  .divActividadesDestacadas h2 {
+    grid-area: tituloH2;
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem; }
+
+.divActividad1 {
+  grid-area: actividad1;
+  padding: 1rem; }
+  .divActividad1 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divActividad2 {
+  grid-area: actividad2;
+  padding: 1rem; }
+  .divActividad2 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divActividad3 {
+  grid-area: actividad3;
+  padding: 1rem; }
+  .divActividad3 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divActividad4 {
+  grid-area: actividad4;
+  padding: 1rem; }
+  .divActividad4 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+/***********************Estilos del footer***********************/
+footer {
+  background-color: #669966;
+  padding-top: 1rem;
+  margin-top: 2rem; }
+  footer h2 {
+    font-weight: bold;
+    color: white;
+    padding-top: 15px; }
+  footer div {
+    text-align: center; }
+
+.footerRedes ul li {
+  list-style-type: none;
+  /*saca los puntos del menu*/
+  display: inline-block;
+  /*pone el menu en horizontal*/
+  padding: 1rem; }
+
+/***********************Estilos de Cursos**********************/
+/*main de curso*/
+.estilo-titulo {
+  text-align: center;
+  color: #669966;
+  font-size: 50px; }
+
+.curso {
+  text-align: center;
+  margin: 10px;
+  height: 400px; }
+  .curso p {
+    color: white; }
+
+main p {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px; }
+
+/*CURSOS PRESENCIALES*/
+.divCursosPresenciales {
+  display: grid;
+  grid-template-areas: "tituloH2" "curso1" "curso2" "curso3";
+  justify-content: center;
+  justify-items: center; }
+  .divCursosPresenciales h2 {
+    grid-area: tituloH2; }
+
+.curso1 {
+  grid-area: curso1;
+  display: grid;
+  grid-template-areas: "nombreCurso1" "imagenCurso1" "parrafoCurso1";
+  justify-content: center;
+  justify-items: center; }
+  .curso1 h3 {
+    grid-area: nombreCurso1;
+    color: #669966; }
+  .curso1 img {
+    grid-area: imagenCurso1;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+  .curso1 p {
+    grid-area: parrafoCurso1; }
+
+.curso2 {
+  grid-area: curso2;
+  display: grid;
+  grid-template-areas: "nombreCurso2" "imagenCurso2" "parrafoCurso2";
+  justify-content: center;
+  justify-items: center; }
+  .curso2 h3 {
+    grid-area: nombreCurso2;
+    color: #669966; }
+  .curso2 img {
+    grid-area: imagenCurso2;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+  .curso2 p {
+    grid-area: parrafoCurso2; }
+
+.curso3 {
+  grid-area: curso3;
+  display: grid;
+  grid-template-areas: "nombreCurso3" "imagenCurso3" "parrafoCurso3";
+  justify-content: center;
+  justify-items: center; }
+  .curso3 h3 {
+    grid-area: nombreCurso3;
+    color: #669966; }
+  .curso3 img {
+    grid-area: imagenCurso3;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+  .curso3 p {
+    grid-area: parrafoCurso3; }
+
+/*CURSOS ONLINE*/
+.divCursosOnline {
+  background-color: #669966;
+  display: grid;
+  grid-template-areas: "tituloOnlineH2" "online1" "online2" "online3";
+  justify-content: center;
+  justify-items: center; }
+  .divCursosOnline h2 {
+    grid-area: tituloOnlineH2;
+    color: white; }
+
+.online1 {
+  grid-area: online1;
+  display: grid;
+  grid-template-areas: "nombreOnline1" "imagenOnline1" "parrafoOnline1";
+  justify-content: center;
+  justify-items: center; }
+  .online1 h3 {
+    grid-area: nombreOnline1; }
+  .online1 img {
+    grid-area: imagenOnline1;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+  .online1 p {
+    grid-area: parrafoOnline1; }
+
+.online2 {
+  grid-area: online2;
+  display: grid;
+  grid-template-areas: "nombreOnline2" "imagenOnline2" "parrafoOnline2";
+  justify-content: center;
+  justify-items: center; }
+  .online2 h3 {
+    grid-area: nombreOnline2; }
+  .online2 img {
+    grid-area: imagenOnline2;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+  .online2 p {
+    grid-area: parrafoOnline2; }
+
+.online3 {
+  grid-area: online3;
+  display: grid;
+  grid-template-areas: "nombreOnline3" "imagenOnline3" "parrafoOnline3";
+  justify-content: center;
+  justify-items: center; }
+  .online3 h3 {
+    grid-area: nombreOnline3; }
+  .online3 img {
+    grid-area: imagenOnline3;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+  .online3 p {
+    grid-area: parrafoOnline3; }
+
+/***********************Estilos de Contacto***********************/
+.estilo-titulo {
+  text-align: center;
+  color: #669966;
+  font-size: 50px; }
+
+form {
+  background-color: #669966;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  border-style: solid;
+  border-color: white; }
+
+form legend {
+  font-size: 25px;
+  text-align: center;
+  padding: 30px; }
+
+.label {
+  text-align: right; }
+
+.respuesta {
+  text-align: left; }
+
+.formulario {
+  display: grid;
+  grid-template-areas: "formNombre" "formEmail" "formPais" "formComentarios" "formBotones";
+  justify-content: center;
+  justify-items: center; }
+
+.formNombre {
+  grid-area: formNombre; }
+
+.formEmail {
+  grid-area: formEmail; }
+
+.formPais {
+  grid-area: formPais; }
+
+.formComentarios {
+  grid-area: formComentarios; }
+
+.formBotones {
+  grid-area: formBotones; }
+
+/***********************BOOTSTRAP***********************/
+/*Menu*/
+.menu-Contacto {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #669966; }
+  .menu-Contacto ul {
+    height: auto; }
+    .menu-Contacto ul li {
+      list-style-type: none;
+      /*saca los puntos del menu*/
+      display: inline-block;
+      /*pone el menu en horizontal*/
+      font-size: 1rem;
+      margin: 0.5rem;
+      position: relative; }
+      .menu-Contacto ul li a {
+        text-decoration: none;
+        /*saca el subrayado azul del link*/
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold; }
+
+.menu-brand {
+  color: white;
+  font-weight: bold; }
+
+/*DIV EMAIL Y PAIS EN CONTACTO*/
+.select-pais-email {
+  width: 100%; }
+
+.form-class-contacto {
+  background-color: #669966;
+  margin: 1rem 2rem 1rem 2rem; }
+
+.boton-enviar {
+  background-color: white;
+  color: #669966; }
+
+/***********************Estilos de Tienda***********************/
+.divTienda {
+  display: grid;
+  grid-template-areas: "tituloTienda" "tienda1" "tienda2" "tienda3" "tienda4";
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem; }
+  .divTienda h1 {
+    grid-area: tituloTienda; }
+
+.tienda1 {
+  grid-area: tienda1; }
+
+.tienda2 {
+  grid-area: tienda2; }
+
+.tienda3 {
+  grid-area: tienda3; }
+
+.tienda4 {
+  grid-area: tienda4; }
+
+/***********************Estilos de Galeria***********************/
+.estilo-titulo {
+  text-align: center;
+  color: #669966;
+  font-size: 50px; }
+
+.divFotos {
+  display: grid;
+  grid-template-areas: "logoChico" "tituloFotos" "foto1" "foto2" "foto3" "foto4";
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem; }
+  .divFotos h2 {
+    grid-area: tituloFotos; }
+
+.divLogoChico {
+  grid-area: logoChico; }
+  .divLogoChico img {
+    width: 20rem; }
+
+.rotar {
+  animation-name: rotar-logo;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes rotar-logo {
+  from {
+    transform: rotateY(0); }
+  to {
+    transform: rotateY(360deg); } }
+
+.divFoto1 {
+  grid-area: foto1; }
+  .divFoto1 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divFoto2 {
+  grid-area: foto2; }
+  .divFoto2 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divFoto3 {
+  grid-area: foto3; }
+  .divFoto3 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divFoto4 {
+  grid-area: foto4; }
+  .divFoto4 img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.divVideos {
+  background-color: #669966;
+  display: grid;
+  grid-template-areas: "tituloVideos" "video1" "video2";
+  justify-content: center;
+  justify-items: center; }
+  .divVideos h2 {
+    grid-area: tituloVideos; }
+
+.video1 {
+  grid-area: video1; }
+  .video1 iframe {
+    width: 20rem;
+    height: 15rem; }
+
+.video2 {
+  grid-area: video2; }
+  .video2 iframe {
+    width: 20rem;
+    height: 15rem; }
+
+/*Estilos de Instituto*/
+.estilo-titulo {
+  text-align: center;
+  color: #669966;
+  font-size: 50px; }
+
+.div-imagen-instituto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .div-imagen-instituto img {
+    width: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5); }
+
+.parrafos-instituto {
+  margin: 1rem 2rem 1rem 2rem; }
+
+/**********************************MEDIA SCREEN************************************/
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+  .logoChico {
+    display: none; }
+  .logoGrande {
+    display: block; }
+  .menuTelefonos {
+    display: none; }
+  .menu {
+    display: block; }
+    .menu ul li {
+      font-size: 2rem;
+      margin: 1rem; }
+      .menu ul li a {
+        font-size: 2rem; }
+  .divPresentacionInstituto {
+    width: 100%;
+    height: 60vh;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "imgLogo tituloH2" "imgLogo descripcionP"; }
+    .divPresentacionInstituto img {
+      display: block;
+      width: 20rem;
+      height: 20rem; }
+    .divPresentacionInstituto h2 {
+      font-size: 3rem; }
+    .divPresentacionInstituto p {
+      font-size: 1.5rem; }
+  .divActividadesDestacadas {
+    grid-template-areas: "tituloH2 tituloH2" "actividad1 actividad2" "actividad3 actividad4"; }
+  /*CURSOS PRESENCIALES*/
+  .divCursosPresenciales {
+    grid-template-areas: "tituloH2 tituloH2 tituloH2" "curso1 curso2 curso3"; }
+  /*CURSOS ONLINE*/
+  .divCursosOnline {
+    grid-template-areas: "tituloOnlineH2 tituloOnlineH2 tituloOnlineH2" "online1 online2 online3"; }
+  /*GALERIA*/
+  .divFotos {
+    grid-template-areas: "logoChico logoChico" "tituloFotos tituloFotos" "foto1 foto2" "foto3 foto4"; }
+  .video1 iframe {
+    width: 40rem;
+    height: 30rem; }
+  .video2 iframe {
+    width: 40rem;
+    height: 30rem; }
+  /*TIENDA*/
+  .divTienda {
+    grid-template-areas: "tituloTienda tituloTienda" "tienda1 tienda2" "tienda3 tienda4"; }
+  .tienda1 img {
+    width: 20rem; }
+  .tienda2 img {
+    width: 20rem; }
+  .tienda3 img {
+    width: 20rem; }
+  .tienda4 img {
+    width: 20rem; }
+  /*BOOTSTRAP*/
+  .menu-brand {
+    font-size: x-large; }
+  /*CONTACTO*/
+  .form-class-contacto {
+    margin: 1rem 10rem 1rem 10rem; }
+  .menu-Contacto ul li a {
+    font-size: 1.5rem; }
+  /*INSTITUTO*/
+  .parrafos-instituto {
+    margin: 1rem 10rem 1rem 10rem; } }
+
+@media screen and (min-width: 1024px) {
+  .menu ul li {
+    font-size: 3rem;
+    margin: 1rem; }
+    .menu ul li a {
+      font-size: 3rem; }
+  .divPresentacionInstituto h2 {
+    font-size: 4rem;
+    margin: 1rem; }
+  .divPresentacionInstituto p {
+    font-size: 1.5rem; }
+  .divActividadesDestacadas {
+    grid-area: area2;
+    /*Grid del Main*/
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tituloH2 tituloH2 tituloH2 tituloH2" "actividad1 actividad2 actividad3 actividad4";
+    justify-content: center;
+    justify-items: center;
+    background-color: #b2eb9c; }
+    .divActividadesDestacadas h2 {
+      font-size: 4rem; }
+  /*GALERIA*/
+  .divFotos {
+    grid-template-areas: "logoChico logoChico logoChico logoChico" "tituloFotos tituloFotos tituloFotos tituloFotos" "foto1 foto2 foto3 foto4"; }
+  /*TIENDA*/
+  .divTienda {
+    grid-template-areas: "tituloTienda tituloTienda tituloTienda tituloTienda" "tienda1 tienda2 tienda3 tienda4"; }
+  /*BOOTSTRAP*/
+  .menu-brand {
+    font-size: xx-large; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

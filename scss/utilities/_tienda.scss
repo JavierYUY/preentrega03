@@ -1,0 +1,44 @@
+
+/***********************Estilos de Tienda***********************/
+.divTienda{
+    display: grid;
+    grid-template-areas:    "tituloTienda"
+                            "tienda1"
+                            "tienda2"
+                            "tienda3"
+                            "tienda4";
+    justify-content: center;
+    justify-items: center;
+    gap: $medidaRem;
+    h1{
+        grid-area: tituloTienda;
+    }
+}
+
+.tienda1{
+    grid-area: tienda1;
+    img{
+        @extend .tienda;
+    }
+}
+
+.tienda2{
+    grid-area: tienda2;
+    img{
+        @extend .tienda;
+    }
+}
+
+.tienda3{
+    grid-area: tienda3;
+    img{
+        @extend .tienda;
+    }
+}
+
+.tienda4{
+    grid-area: tienda4;
+    img{
+        @extend .tienda;
+    }
+}

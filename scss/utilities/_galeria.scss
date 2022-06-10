@@ -1,0 +1,106 @@
+
+/***********************Estilos de Galeria***********************/
+.estilo-titulo{
+    text-align: map-get($map: $estilo-h1, $key: align);
+    color: map-get($map: $estilo-h1, $key: color);
+    font-size: map-get($map: $estilo-h1, $key: size);
+}
+
+.divFotos{
+    display: grid;
+    grid-template-areas:    "logoChico"
+                            "tituloFotos"
+                            "foto1"
+                            "foto2"
+                            "foto3"
+                            "foto4";
+    justify-content: center;
+    justify-items: center;
+    gap: $medidaRem;
+    h2{
+        grid-area: tituloFotos;
+    }
+}
+
+.divLogoChico{
+    grid-area: logoChico;
+    img{
+        width: $medidaRem * 20;
+    }
+}
+
+.rotar{
+    animation-name: rotar-logo;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotar-logo{
+    from{
+        transform: rotateY(0);
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.divFoto1{
+    grid-area: foto1;
+    img{
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+}
+
+.divFoto2{
+    grid-area: foto2;
+    img{
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+}
+
+.divFoto3{
+    grid-area: foto3;
+    img{
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+}
+
+.divFoto4{
+    grid-area: foto4;
+    img{
+        border-radius: map-get($map: $imagenes, $key: radius);
+        box-shadow: map-get($map: $imagenes, $key: shadow);
+    }
+}
+
+.divVideos{
+    background-color: $color-principal;
+    display: grid;
+    grid-template-areas:    "tituloVideos"
+                            "video1"
+                            "video2";
+    justify-content: center;
+    justify-items: center;
+    h2{
+        grid-area: tituloVideos;
+    }
+}
+
+.video1{
+    grid-area: video1;
+    iframe{
+        @include sizes(($medidaRem * 20), ($medidaRem * 15));
+    }
+}
+
+.video2{
+    grid-area: video2;
+    iframe{
+        @include sizes(($medidaRem * 20), ($medidaRem * 15));
+    }
+}

@@ -1,0 +1,24 @@
+/***********************Estilos del footer***********************/
+footer{
+    background-color: $color-principal;
+    padding-top: $medidaRem;
+    margin-top: $medidaRem * 2;
+    h2{
+        font-weight: bold;
+        color: $color-letra;
+        padding-top: 15px;
+    }
+    div{
+        text-align: center;
+    }
+}
+
+.footerRedes{
+    ul{
+        li{
+            list-style-type: none;/*saca los puntos del menu*/
+            display: inline-block;/*pone el menu en horizontal*/
+            padding: $medidaRem;
+        }
+    }
+}

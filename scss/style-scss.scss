@@ -1,0 +1,20 @@
+//imports
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/extend";
+@import "utilities/mixin";
+@import "utilities/header";
+@import "utilities/mainIndex";
+@import "utilities/footer";
+@import "utilities/cursos";
+@import "utilities/contacto";
+@import "utilities/tienda";
+@import "utilities/galeria";
+@import "utilities/instituto";
+@import "utilities/mediaQ";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
